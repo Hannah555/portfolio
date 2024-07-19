@@ -2,8 +2,8 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='bg-black'>
-        <ul>
+    <div className='text-white m-10'>
+        <ul className='flex gap-10'>
             <li>
                 <a>About</a>
             </li>
