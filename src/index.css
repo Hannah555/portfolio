@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+  @font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    font-weight: 100 900; /* This maps to Tailwind's fonts */
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Josefin';
+    src: url('./fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+  }
+
+  h1 {
+    @apply text-7xl font-bold p-0 m-0 leading-none;
+  }
+
+  h2 {
+    @apply text-4xl font-semibold;
+  }
+
+  p {
+    @apply text-lg;
+  }

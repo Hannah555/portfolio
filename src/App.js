@@ -1,10 +1,13 @@
+import { ScrollProvider } from "./contexts/scrollcontext";
 import Main from "./pages/main";
 
 function App() {
   return (
-    <div className="bg-black text-white font-sans">
-      <Main/>
-    </div>
+    <ScrollProvider>
+      <div className="bg-gray-900 text-white font-sans">
+        <Main />
+      </div>
+    </ScrollProvider>
   );
 }
 
