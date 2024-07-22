@@ -7,10 +7,8 @@ const InputBox = () => {
         <img src={emojiIcon} className='h-6 w-6' alt='icon'/>
         <input 
         placeholder='Message'
-        className='w-full bg-slate-500 outline-none '/>
-    </div>
-        
-    
+        className='w-full bg-slate-500 outline-none'/>
+    </div>   
   )
 }
 

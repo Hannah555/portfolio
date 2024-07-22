@@ -15,19 +15,19 @@ const About = () => {
       image: codeImage1,
       title: "Front-End Development",
       description:
-        "Creating responsive and dynamic user interfaces using React, JavaScript, HTML, and CSS (TailwindCSS).",
+        "<p>Creating responsive and dynamic user interfaces using React, JavaScript, HTML, and CSS (TailwindCSS).</p>",
     },
     {
       image: codeImage2,
       title: "Back-End Development",
       description:
-        "Building and maintaining server-side applications with Node.js, Express, database management (MongoDB).",
+        "<p>Building and maintaining server-side applications with Node.js, Express, database management (MongoDB).</p>",
     },
     {
         image: devopsImage,
         title: "DevOps",
         description:
-          "Ensuring smooth deployment and development workflows with tools like Docker and Jenkins.",
+          "<p>Ensuring smooth deployment and development workflows with tools like Docker and Jenkins.</p>",
       },
   ];
 
@@ -43,7 +43,7 @@ const About = () => {
             front-end and full-stack development. I love to bring my skills to
             new and exciting challenges.
           </p>
-          <p className="italic text-xl bg-pink-500 w-fit px-3">
+          <p className="italic text-xl bg-pink-600 w-fit px-3">
             I’m looking for new opportunities as a web developer.
           </p>
         </div>

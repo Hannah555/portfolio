@@ -12,7 +12,6 @@ import Project from "./project";
 import Blog from "./blog";
 import FloatButton from "../components/floatbutton";
 import { useScroll } from "../contexts/scrollcontext";
-import { isVisible } from "@testing-library/user-event/dist/utils";
 
 const Main = () => {
   const [isBotVisible, setBotVisible] = useState(false);

@@ -27,3 +27,7 @@
   p {
     @apply text-lg;
   }
+
+  .group:hover .group-hover\\:translate-x-2:hover {
+    transform: translateX(0.5rem);
+  }
