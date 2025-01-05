@@ -2,35 +2,28 @@ import React from 'react'
 import { useScroll } from '../contexts/scrollcontext'
 import image1 from '../images/code1.png'
 import Hero from '../components/hero';
+import ProjectSlide from '../components/projectSlide';
+import { projects } from '../data/projectData';
+import Corousel from '../components/corousel';
 
 const Project = () => {
 
     const {targetRefs} = useScroll();
 
-    const sections = [
-        {
-            image: image1,
-            title: 'Web Blog with Shopping Cart',
-            description: '<div><p>A comprehensive blog platform with e-commerce capabilities.</p></div>'
-        },
-        {
-            image: image1,
-            title: 'Web Portfolio (Opusmonkey)',
-            description: '<p>This is a portfolio website for a HR freelancer.</p>'
-        },
-        {
-            image: image1,
-            title: 'Syncplay',
-            description: '<p>A website that allow users to watch movie together.</p>'
-        },
-    ]
-
   return (
-    <div ref={targetRefs.project} className='container flex flex-col justify-center container gap-24 p-10 border-y-2 border-y-gray-500'>
-        <h1 className='text-center mt-10'>Project</h1>
-        <div>
-            <Hero sections={sections}/>
-        </div>
+    <div className="flex items-center justify-center min-h-screen overflow-hidden">
+      <div className="flex flex-col gap-16 max-w-[1250px] w-full overflow-hidden">
+        <p className="animate-slide-down font-josefin text-7xl">Projects</p>
+        <p>A curated selection of my recent web development work.</p>
+        <Corousel slides={projects.map((project) => () => 
+                <ProjectSlide data={project}/>
+            )}/>
+        {/* {
+            projects.map((project) => (
+                <ProjectSlide data={project}/>
+            ))
+        } */}
+      </div>
     </div>
   )
 }
