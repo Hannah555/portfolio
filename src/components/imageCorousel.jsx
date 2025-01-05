@@ -24,7 +24,7 @@ const ImageCorousel = ({images}) => {
                 <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)`, }}>
                     <div className='flex w-[350px] h-[350px]'>
                        {images.map((item, index) => (
-                            <img className='object-contain' key={index} src={imagesMap[item]} alt='screenshot'/>
+                            <img className='object-fit' key={index} src={imagesMap[item]} alt='screenshot'/>
                         ))} 
                     </div>
                     

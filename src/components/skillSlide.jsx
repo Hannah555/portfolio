@@ -22,7 +22,7 @@ const SkillSlideFrontend = () => {
 
     return (
         <div>
-            <div className="w-[1020px] text-white flex flex-col gap-16 items-center justify-center">
+            <div className="w-[1020px] py-10 text-white flex flex-col gap-16 items-center justify-center">
                 <h1 className="text-4xl font-bold">Front-End</h1>
                 <div className='flex gap-5'>
                     {
@@ -40,7 +40,7 @@ const SkillSlideFrontend = () => {
 const SkillSlideBackend = () => {
     return (
         <div>
-            <div className="w-[1020px] w-full text-white flex flex-col gap-16 items-center justify-center">
+            <div className="w-[1020px] py-10 w-full text-white flex flex-col gap-16 items-center justify-center">
                 <h1 className="text-4xl font-bold">Back-End</h1>
                 <div className='flex gap-5'>
                     {
@@ -58,7 +58,7 @@ const SkillSlideBackend = () => {
 const SkillSlideDevOps = () => {
     return (
         <div>
-            <div className="w-[1020px] text-white flex flex-col gap-16 items-center justify-center">
+            <div className="w-[1020px] py-10 text-white flex flex-col gap-16 items-center justify-center">
                 <h1 className="text-4xl font-bold">DevOps & Tools</h1>
                 <div className='flex gap-5'>
                     {
@@ -76,7 +76,7 @@ const SkillSlideDevOps = () => {
 const SkillSlideSoftSkill = () => {
     return (
         <div>
-            <div className="w-[1020px] text-white flex flex-col gap-16 items-center justify-center">
+            <div className="w-[1020px] py-10 text-white flex flex-col gap-16 items-center justify-center">
                 <h1 className="text-4xl font-bold">Soft Skills</h1>
                 <div className='flex gap-5'>
                     {

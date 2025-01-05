@@ -1,6 +1,6 @@
 export const projects = [
     {
-        screenshots: ['code1', 'code1'],
+        screenshots: ['code1', 'code2'],
         name: 'Gatsby React Website - opusmonkey.com',
         tagline: 'A blazing-fast site for blog posts and portfolios, optimized for performance and SEO.',
         features: [
@@ -15,10 +15,10 @@ export const projects = [
                 "Deployment & Tools": ['Jenkins (CI/CD)', 'VPS (Nginx, SSL)', 'Git'],
             }
         ],
-        projectLink: "https://www.opusmonkey.com",
+        projectLink: "https://opusmonkey.com",
     },
     {
-        screenshots: ['devops.png'],
+        screenshots: ['code2'],
         name: 'React Web Blog - quivar.lat',
         tagline: 'A dynamic blog platform built with React and Express for seamless content delivery.',
         features: [
@@ -37,10 +37,10 @@ export const projects = [
                 "Deployment & Tools": ['Jenkins (CI/CD)', 'VPS (Nginx, SSL)', 'Git'],
             }
         ],
-        projectLink: "https://www.quivar.lat",
+        projectLink: "https://quivar.lat",
     },
     {
-        screenshots: ['devops.png'],
+        screenshots: ['code1'],
         name: 'Content Management System',
         tagline: 'A lightweight CMS designed for easy CRUD operations and streamlined deployment.',
         features: [
@@ -53,12 +53,12 @@ export const projects = [
         ],
         techStack: [
             {
-                "Front-End": ['React.js, Nx Workspace, Tailwind CSS'],
+                "Front-End": ['React.js', 'Nx Workspace', 'Tailwind CSS'],
                 "Back-End": ['Node.js', 'Express.js'],
                 "Database": ['MongoDB'],
                 "Deployment & Tools": ['Jenkins (CI/CD)', 'VPS (Nginx, SSL)', 'Git'],
             }
         ],
-        projectLink: "https://cmserver.quivar.lat",
+        projectLink: "https://cms.quivar.lat",
     }
 ]
