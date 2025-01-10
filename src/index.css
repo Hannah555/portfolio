@@ -24,6 +24,10 @@
     @apply text-4xl font-semibold;
   }
 
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+
   p {
     @apply text-lg;
   }

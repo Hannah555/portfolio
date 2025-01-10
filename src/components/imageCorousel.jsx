@@ -18,11 +18,11 @@ const ImageCorousel = ({images}) => {
     }
 
     return (
-        <div>
+        <div className='flex flex-col gap-2'>
             <div className="relative w-auto h-auto overflow-hidden">
                 {/* Slide Container */}
                 <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)`, }}>
-                    <div className='flex w-[350px] h-[350px]'>
+                    <div className='flex w-[350px] h-[250px]'>
                        {images.map((item, index) => (
                             <img className='object-fit' key={index} src={imagesMap[item]} alt='screenshot'/>
                         ))} 

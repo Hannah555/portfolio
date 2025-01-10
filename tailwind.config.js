@@ -24,6 +24,9 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
         josefin: ['Josefin', 'sans-serif'],
       },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(135deg, #1E1E2F, #2A2A3C, #1E1E2F)',
+      }
     },
   },
   plugins: [],

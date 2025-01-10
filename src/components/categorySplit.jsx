@@ -31,7 +31,7 @@ const CategorySplit = ({ data }) => {
                                         {tools.map((tool, idx) => (
                                             <div
                                                 key={idx}
-                                                className={`${getRandomColor()} text-black text-sm rounded px-2 py-1`}
+                                                className={`${getRandomColor()} text-black text-sm rounded-full px-2 py-1`}
                                             >
                                                 {tool}
                                             </div>
@@ -58,7 +58,7 @@ const CategorySplit = ({ data }) => {
                                             {tools.map((tool, idx) => (
                                                 <div
                                                     key={idx}
-                                                    className={`${getRandomColor()} text-black text-sm rounded px-2 py-1`}
+                                                    className={`${getRandomColor()} text-black text-sm rounded-full px-2 py-1`}
                                                 >
                                                     {tool}
                                                 </div>
@@ -77,7 +77,7 @@ const CategorySplit = ({ data }) => {
                                             {tools.map((tool, idx) => (
                                                 <div
                                                     key={idx}
-                                                    className={`${getRandomColor()} text-black text-sm rounded px-2 py-1`}
+                                                    className={`${getRandomColor()} text-black text-sm rounded-full px-2 py-1`}
                                                 >
                                                     {tool}
                                                 </div>

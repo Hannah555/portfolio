@@ -1,13 +1,13 @@
 export const projects = [
     {
-        screenshots: ['code1', 'code2'],
+        screenshots: ['gatsby_home'],
         name: 'Gatsby React Website - opusmonkey.com',
         tagline: 'A blazing-fast site for blog posts and portfolios, optimized for performance and SEO.',
         features: [
-            "Static Site Generation: Powered by Gatsby for faster load times and better SEO.",
-            "Optimized Images: Utilized gatsby-image (or similar plugins) to reduce load times.",
-            "SEO Best Practices: Implemented custom components for meta tags and structured data.",
-            "Continuous Integration: Deployed on a VPS, integrated with Jenkins (or GitHub Actions) for automated builds.",
+            {'Static Site Generation': 'Powered by Gatsby for faster load times and better SEO.'},
+            {'Optimized Images': 'Utilized gatsby-image (or similar plugins) to reduce load times.'},
+            {'SEO Best Practices': 'Implemented custom components for meta tags and structured data.'},
+            {'Continuous Integration': 'Deployed on a VPS, integrated with Jenkins (or GitHub Actions) for automated builds.'},
         ],
         techStack: [
             {
@@ -16,9 +16,10 @@ export const projects = [
             }
         ],
         projectLink: "https://opusmonkey.com",
+        projectRef: 'project1',
     },
     {
-        screenshots: ['code2'],
+        screenshots: ['blog_home'],
         name: 'React Web Blog - quivar.lat',
         tagline: 'A dynamic blog platform built with React and Express for seamless content delivery.',
         features: [
@@ -38,18 +39,14 @@ export const projects = [
             }
         ],
         projectLink: "https://quivar.lat",
+        projectRef: 'project2',
     },
     {
-        screenshots: ['code1'],
+        screenshots: ['cms_home'],
         name: 'Content Management System',
         tagline: 'A lightweight CMS designed for easy CRUD operations and streamlined deployment.',
         features: [
-            "Intuitive Interface: Built a user-friendly platform to add, edit, and delete blog content.",
-            "Scalable Data Storage: Integrated MongoDB for efficient handling of content.",
-            "Optimized Delivery: Leveraged Jenkins for continuous integration, simplifying releases and updates.",
-            "SSL Security: Implemented SSL certificates (e.g., Let's Encrypt) for secure HTTPS connections.",
-            "Full CRUD Support: Implemented content management pages allowing full create, read, update, and delete operations.",
-            "User Authentication: "
+                           
         ],
         techStack: [
             {
@@ -60,5 +57,6 @@ export const projects = [
             }
         ],
         projectLink: "https://cms.quivar.lat",
+        projectRef: 'project3',
     }
 ]
