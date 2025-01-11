@@ -17,7 +17,7 @@ const ProjectSlide = ({ data }) => {
     }
 
     return (
-        <div className='flex gap-10 py-10'>
+        <div className='flex flex-col lg:flex-row gap-10 py-10'>
             <div>
                 <ImageCorousel images={data.screenshots} />
             </div>

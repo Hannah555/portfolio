@@ -33,7 +33,7 @@ const Corousel = ({ slides }) => {
                 ))}
             </div>
 
-            <div className="relative min-w-[1020px] min-h-[200px] px-10 overflow-hidden">
+            <div className="relative px-10 overflow-hidden">
                 {/* Slide Container */}
                 <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)`, }}>
                     {slides.map((Slide, index) => (

@@ -46,7 +46,10 @@ const Main = () => {
 
   return (
     <div className="relative font-josefin font-normal static">
-      <Navbar/>
+      <div className="invisible lg:visible">
+        <Navbar/>
+      </div>
+      
       <div className={`min-h-screen`} >
         {activeSection === 'home' && (<Home/>)}
         {activeSection === 'about' && (<About/>)}
