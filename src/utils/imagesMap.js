@@ -9,6 +9,8 @@ const imagesMap = {
   cms_table: require('../images/cms/table.png'),
   cms_wysiwyg: require('../images/cms/wysiwyg.png'),
   cms_crud: require('../images/cms/crud.png'),
+  cms_login: require('../images/cms/login.png'),
+  cms_jenkins: require('../images/cms/jenkins.png'),
 }
 
 export default imagesMap

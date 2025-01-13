@@ -36,10 +36,10 @@ const Project3 = ({ data }) => {
 
                     </div>
 
-                    <div className='flex flex-col lg:col-span-2 bg-slate-50 rounded p-8'>
-                        <div>
+                    <div className='flex flex-col gap-5 lg:col-span-2 p-8'>
+                        <div className='flex flex-col gap-3'>
                             <h3>WYSIWYG Editor Implementation from scratch</h3>
-                            <div>Include element such as ...</div>
+                            <div>Include element such as 'bold', 'italic', 'paragraph', etc...</div>
                         </div>
                         <div className='flex-1 shadow-xl'>
                             <img src={imagesMap['cms_wysiwyg']} alt="screenshot" />
@@ -51,9 +51,28 @@ const Project3 = ({ data }) => {
                             <img src={imagesMap['cms_crud']} alt="screenshot" />
                         </div>
                         <div>
-                            <h3>Full CRUD Operations</h3>
+                            <h3>Full CRUD Support</h3>
                             <div>ADD, EDIT, DELETE blog content.</div>
                         </div>
+                    </div>
+
+                    <div className='flex flex-col gap-5 bg-slate-50 rounded p-8'>
+                        <h3>User Authentication</h3>
+                        <div className='flex-1 shadow-xl'>
+                            <img src={imagesMap['cms_login']} alt="screenshot" />
+                        </div>
+                        <div>Included secure login for authenticated access.</div>
+                    </div>
+
+                    <div className='flex flex-col gap-5 lg:col-span-2 p-5'>
+                        <div className='max-h-[250px]'>
+                            <img src={imagesMap['cms_jenkins']} alt="screenshot" className='shadow-xl object-cover object-top w-full h-full'/>
+                        </div>
+                        <div className='flex-1'>
+                            <h3>Optimized Delivery</h3>
+                            <div>Leveraged Jenkins for continuous integration, simplifying releases and updates.</div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
