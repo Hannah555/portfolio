@@ -6,8 +6,6 @@ import Corousel from '../components/corousel';
 
 const Project = () => {
 
-    const {targetRefs} = useScroll();
-
   return (
     <div className="flex items-center justify-center min-h-screen overflow-hidden lg:ml-[245px] p-5 pt-10">
       <div className="flex flex-col gap-8 max-w-[1250px] w-full overflow-hidden">

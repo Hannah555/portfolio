@@ -1,5 +1,4 @@
 import React from 'react'
-import phoneIcon from '../images/phone.svg'
 import mailIcon from '../images/mail.svg'
 import whatsappIcon from '../images/whatsapp.svg'
 import { useScroll } from '../contexts/scrollcontext'

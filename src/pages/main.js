@@ -1,17 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/navbar";
-import Chatbot from "../components/chatbot";
-import {
-  RectButtonFill,
-  RectButtonOutline,
-  RectButtonOutlinePink,
-} from "../components/rectbutton";
 import Contact from "./contact";
 import About from "./about";
 import Project from "./project";
-import Blog from "./blog";
-import FloatButton from "../components/floatbutton";
-import { useScroll } from "../contexts/scrollcontext";
 import Home from "./home";
 import { useRender } from "../contexts/rendercontext";
 import Skills from "./skills";
@@ -23,8 +14,7 @@ import Project2 from "./projectDetail/project2";
 import Project3 from "./projectDetail/project3";
 
 const Main = () => {
-  const [isBotVisible, setBotVisible] = useState(false);
-  const [isBtnVisible, setBtnVisible] = useState(false);
+  const [setBtnVisible] = useState(false);
   const {activeSection} = useRender();
   const {project} = usePopup();
 
@@ -45,7 +35,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div className="relative font-josefin font-normal static">
+    <div className="relative font-josefin font-normal">
       <div className="">
         <Navbar/>
       </div>

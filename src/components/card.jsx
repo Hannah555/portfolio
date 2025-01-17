@@ -1,5 +1,4 @@
 import React from 'react'
-import codeImage1 from '../images/code1.png'
 import codeImage2 from '../images/code2.png'
 
 const Card = ({imgsrc, title, desp, className}) => {
@@ -13,18 +12,6 @@ const Card = ({imgsrc, title, desp, className}) => {
     </div>
   )
 }
-
-// const YCard = ({imgsrc, title, desp}) => {
-//   return (
-//     <div className='flex flex-col'>
-//       <img src={imgsrc} alt='code' className='h=32 w-32'/>
-//       <div>
-//         <h2>{title}</h2>
-        
-//       </div>
-//     </div>
-//   )
-// }
 
 Card.defaultProps = {
     image: codeImage2,

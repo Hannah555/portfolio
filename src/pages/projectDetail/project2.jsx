@@ -1,7 +1,5 @@
 import React from 'react'
-import Popup from '../../components/popup'
 import imagesMap from '../../utils/imagesMap'
-import CardCorousel from '../../components/cardCorousel'
 import { chunkArrayWithPattern } from '../../utils/chunkArray'
 
 const Project2 = ({ data }) => {
@@ -117,7 +115,7 @@ const Project2 = ({ data }) => {
             chunkArrayWithPattern(data.icons, [4, 5, 3, 4]).map((row, rowIndex) => (
               <div key={rowIndex} className="flex gap-32 justify-center">
                 {row.map((icon, index) => (
-                  <img src={imagesMap[icon]} key={index} className="h-10" />
+                  <img src={imagesMap[icon]} key={index} className="h-10" alt='screenshot'/>
                 ))}
               </div>
             ))

@@ -6,7 +6,7 @@ import { usePopup } from '../contexts/popupcontext';
 
 const ProjectSlide = ({ data }) => {
 
-    const {project, setProject} = usePopup();
+    const {setProject} = usePopup();
 
     const handleProjectView = () => {
         window.open(data.projectLink, '_blank', 'noopener,noreferrer');
