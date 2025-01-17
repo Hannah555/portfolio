@@ -25,13 +25,13 @@ const CategorySplit = ({ data }) => {
                     return (
                         <div key={index} className="flex flex-col gap-4">
                             {categories.map(([category, tools]) => (
-                                <div key={category} className="mb-4">
+                                <div key={category} className="mb-4 flex flex-col gap-4">
                                     <h3 className="text-xl font-semibold">{category}</h3>
-                                    <div className="flex gap-3">
+                                    <div className="flex flex-col md:flex-row gap-3">
                                         {tools.map((tool, idx) => (
                                             <div
                                                 key={idx}
-                                                className={`${getRandomColor()} text-black text-sm rounded-full px-2 py-1`}
+                                                className={`${getRandomColor()} text-black text-sm rounded-full px-2 py-1 w-fit`}
                                             >
                                                 {tool}
                                             </div>
@@ -48,17 +48,17 @@ const CategorySplit = ({ data }) => {
                     const rightColumn = categories.slice(half);
 
                     return (
-                        <div key={index} className="grid grid-cols-2 gap-4">
+                        <div key={index} className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                             {/* Left Column */}
                             <div className="flex flex-col gap-4">
                                 {leftColumn.map(([category, tools]) => (
-                                    <div key={category} className="mb-4">
+                                    <div key={category} className="mb-4 flex flex-col gap-4">
                                         <h3 className="text-xl font-semibold">{category}</h3>
-                                        <div className="flex gap-3">
+                                        <div className="flex flex-col md:flex-row gap-3">
                                             {tools.map((tool, idx) => (
                                                 <div
                                                     key={idx}
-                                                    className={`${getRandomColor()} text-black text-sm rounded-full px-2 py-1`}
+                                                    className={`${getRandomColor()} text-black text-sm rounded-full px-2 py-1 w-fit`}
                                                 >
                                                     {tool}
                                                 </div>
@@ -71,13 +71,13 @@ const CategorySplit = ({ data }) => {
                             {/* Right Column */}
                             <div className="flex flex-col gap-4">
                                 {rightColumn.map(([category, tools]) => (
-                                    <div key={category} className="mb-4">
+                                    <div key={category} className="mb-4 flex flex-col gap-4">
                                         <h3 className="text-xl font-semibold">{category}</h3>
-                                        <div className="flex gap-3">
+                                        <div className="flex flex-col md:flex-row gap-3">
                                             {tools.map((tool, idx) => (
                                                 <div
                                                     key={idx}
-                                                    className={`${getRandomColor()} text-black text-sm rounded-full px-2 py-1`}
+                                                    className={`${getRandomColor()} text-black text-sm rounded-full px-2 py-1 w-fit`}
                                                 >
                                                     {tool}
                                                 </div>

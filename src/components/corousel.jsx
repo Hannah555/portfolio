@@ -23,7 +23,7 @@ const Corousel = ({ slides }) => {
         <div>
 
             {/* Indicators */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center justify-center lg:items-start lg:justify-start gap-2">
                 {slides.map((_, index) => (
                     <div
                         key={index}
@@ -33,7 +33,7 @@ const Corousel = ({ slides }) => {
                 ))}
             </div>
 
-            <div className="relative px-10 overflow-hidden">
+            <div className="relative w-full overflow-hidden">
                 {/* Slide Container */}
                 <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)`, }}>
                     {slides.map((Slide, index) => (
@@ -45,13 +45,13 @@ const Corousel = ({ slides }) => {
 
                 {/* Controls */}
                 <button
-                    className="absolute top-1/2 left-5 transform-translate-y-1/2 text-white px-2 py-2 z-10"
+                    className="absolute top-1/2 left-0 transform-translate-y-1/2 text-white px-2 py-2 z-10"
                     onClick={slideToPrev}
                 >
                     <FaAngleLeft />
                 </button>
                 <button
-                    className="absolute top-1/2 right-5 transform-translate-y-1/2 text-white px2 py-2 z-10"
+                    className="absolute top-1/2 right-0 transform-translate-y-1/2 text-white px2 py-2 z-10"
                     onClick={slideToNext}
                 >
                     <FaAngleRight />

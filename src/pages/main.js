@@ -46,7 +46,7 @@ const Main = () => {
 
   return (
     <div className="relative font-josefin font-normal static">
-      <div className="invisible lg:visible">
+      <div className="">
         <Navbar/>
       </div>
       

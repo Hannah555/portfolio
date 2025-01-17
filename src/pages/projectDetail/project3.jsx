@@ -2,6 +2,7 @@ import React from 'react'
 import Popup from '../../components/popup'
 import imagesMap from '../../utils/imagesMap'
 import CardCorousel from '../../components/cardCorousel'
+import { chunkArrayWithPattern } from '../../utils/chunkArray'
 
 const Project3 = ({ data }) => {
     return (
@@ -14,8 +15,8 @@ const Project3 = ({ data }) => {
 
                 <img src={imagesMap['cms_home']} alt='screenshot' className='h-[300px] max-w-[500px] w-fit rounded shadow-lg' />
             </div>
-            <div className='bg-orange-100 py-20 px-10 flex flex-col justify-center items-center gap-10'>
-                <h2>Features</h2>
+            <div className='bg-gray-700 py-20 px-10 flex flex-col justify-center items-center gap-10'>
+                <h2 className='text-white'>Features</h2>
                 <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-[1200px]'>
                     <div className='flex flex-col-reverse lg:col-span-3 gap-10 bg-slate-50 rounded p-8'>
                         <div className='flex flex-col gap-3'>
@@ -37,7 +38,7 @@ const Project3 = ({ data }) => {
                     </div>
 
                     <div className='flex flex-col gap-5 lg:col-span-2 p-8'>
-                        <div className='flex flex-col gap-3'>
+                        <div className='flex flex-col gap-3 text-white'>
                             <h3>WYSIWYG Editor Implementation from scratch</h3>
                             <div>Include element such as 'bold', 'italic', 'paragraph', etc...</div>
                         </div>
@@ -68,7 +69,7 @@ const Project3 = ({ data }) => {
                         <div className='max-h-[250px]'>
                             <img src={imagesMap['cms_jenkins']} alt="screenshot" className='shadow-xl object-cover object-top w-full h-full'/>
                         </div>
-                        <div className='flex-1'>
+                        <div className='flex-1 text-white'>
                             <h3>Optimized Delivery</h3>
                             <div>Leveraged Jenkins for continuous integration, simplifying releases and updates.</div>
                         </div>
@@ -76,9 +77,19 @@ const Project3 = ({ data }) => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className='flex flex-col gap-28 justify-center items-center py-20 px-10'>
                 <h2>Tools</h2>
-
+                <div className='flex flex-col gap-10'>
+                    {
+                        chunkArrayWithPattern(data.icons, [4, 5, 3, 4]).map((row, rowIndex) => (
+                            <div key={rowIndex} className="flex gap-32 justify-center">
+                              {row.map((icon, index) => (
+                                <img src={imagesMap[icon]} key={index} className="h-10" />
+                              ))}
+                            </div>
+                          ))
+                    }
+                </div>
             </div>
         </div>
     )

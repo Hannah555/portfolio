@@ -9,7 +9,7 @@ const Contact = () => {
     const {targetRefs} = useScroll();
 
   return (
-    <div className='flex items-center justify-center min-h-screen'>
+    <div className='flex p-10 items-center justify-center min-h-screen'>
        <div className='flex flex-col gap-10 p-10 '>
             <div className='flex flex-col gap-5'>
                 <p className=' animate-slide-down font-josefin text-7xl'>Let's Connect</p>

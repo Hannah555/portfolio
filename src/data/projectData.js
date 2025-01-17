@@ -9,6 +9,7 @@ export const projects = [
             {'SEO Best Practices': 'Implemented custom components for meta tags and structured data.'},
             {'Continuous Integration': 'Deployed on a VPS, integrated with Jenkins (or GitHub Actions) for automated builds.'},
         ],
+        icons: ['icons_gatsby', 'icons_centos', 'icons_git', 'icons_nginx'],
         techStack: [
             {
                 "Front-End": ['Gatsby (React)'],
@@ -31,6 +32,7 @@ export const projects = [
             "Environment Management: Secured app with environment variables and back-end API authentication.",
             "Maintainability: Utilized Nx Workspace for organized, scalable code.",
         ],
+        icons: ['icons_centos', 'icons_express', 'icons_git', 'icons_jenkins', 'icons_mongodb', 'icons_nginx', 'icons_node', 'icons_nx', 'icons_react', 'icons_tailwindcss'],
         techStack: [
             {
                 "Front-End": ['React.js', 'Nx Workspace', 'Tailwind CSS'],
@@ -45,9 +47,7 @@ export const projects = [
         screenshots: ['cms_home'],
         name: 'Content Management System',
         tagline: 'A lightweight CMS designed for easy CRUD operations and streamlined deployment.',
-        features: [
-                           
-        ],
+        icons: ['icons_centos', 'icons_express', 'icons_git', 'icons_jenkins', 'icons_mongodb', 'icons_nginx', 'icons_node', 'icons_nx', 'icons_react', 'icons_tailwindcss'],
         techStack: [
             {
                 "Front-End": ['React.js', 'Nx Workspace', 'Tailwind CSS'],

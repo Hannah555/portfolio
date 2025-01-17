@@ -22,12 +22,12 @@ const SkillSlideFrontend = () => {
 
     return (
         <div>
-            <div className="w-[1020px] py-10 text-white flex flex-col gap-16 items-center justify-center">
+            <div className="max-w-[1020px] py-10 text-white flex flex-col gap-16 items-center justify-center">
                 <h1 className="text-4xl font-bold">Front-End</h1>
-                <div className='flex gap-5'>
+                <div className='flex flex-col lg:flex-row items-center gap-5'>
                     {
                         frontendSkill.map((item, index) => (
-                            <div key={index} className={`${getRandomColor()} text-lg text-black rounded-full px-4 py-1`} >{item}</div>
+                            <div key={index} className={`${getRandomColor()} text-lg text-black rounded-full px-4 py-1 w-fit`} >{item}</div>
                         ))
                     }
                 </div>
@@ -40,12 +40,12 @@ const SkillSlideFrontend = () => {
 const SkillSlideBackend = () => {
     return (
         <div>
-            <div className="w-[1020px] py-10 w-full text-white flex flex-col gap-16 items-center justify-center">
+            <div className="max-w-[1020px] py-10 text-white flex flex-col gap-16 items-center justify-center">
                 <h1 className="text-4xl font-bold">Back-End</h1>
-                <div className='flex gap-5'>
+                <div className='flex flex-col lg:flex-row items-center gap-5'>
                     {
                         backendSkill.map((item, index) => (
-                            <div key={index} className={`${getRandomColor()} text-lg text-black rounded-full px-4 py-1`} >{item}</div>
+                            <div key={index} className={`${getRandomColor()} text-lg text-black rounded-full px-4 py-1 w-fit`} >{item}</div>
                         ))
                     }
                 </div>
@@ -60,7 +60,7 @@ const SkillSlideDevOps = () => {
         <div>
             <div className="w-[1020px] py-10 text-white flex flex-col gap-16 items-center justify-center">
                 <h1 className="text-4xl font-bold">DevOps & Tools</h1>
-                <div className='flex gap-5'>
+                <div className='flex flex-col lg:flex-row items-center gap-5'>
                     {
                         devOps.map((item, index) => (
                             <div key={index} className={`${getRandomColor()} text-lg text-black rounded-full px-4 py-1`} >{item}</div>
@@ -78,7 +78,7 @@ const SkillSlideSoftSkill = () => {
         <div>
             <div className="w-[1020px] py-10 text-white flex flex-col gap-16 items-center justify-center">
                 <h1 className="text-4xl font-bold">Soft Skills</h1>
-                <div className='flex gap-5'>
+                <div className='flex flex-col lg:flex-row items-center gap-5'>
                     {
                         softSkill.map((item, index) => (
                             <div key={index} className={`${getRandomColor()} text-lg text-black rounded-full px-4 py-1`} >{item}</div>

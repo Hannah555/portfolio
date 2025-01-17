@@ -8,11 +8,11 @@ const Home = () => {
 
   return (
     <div ref={targetRefs.top} className="min-h-screen flex justify-center items-center">
-        <div className="flex flex-col max-w-[1020px]">
+        <div className="flex flex-col p-10 max-w-[1020px]">
           <div className="flex flex-col gap-5">
-            <div className='gap-10'>
-                <div className=" animate-slide-down font-josefin text-7xl leading-normal">Hi, I'm Lee Bee Yan - React Web Developer</div>
-                <p className="text-lg leading-loose tracking-wider text-xl">
+            <div className='flex flex-col gap-5'>
+                <div className=" animate-slide-down font-josefin text-5xl lg:text-7xl lg:leading-normal">Hi, I'm Lee Bee Yan - React Web Developer</div>
+                <p className="text-md lg:text-lg lg:leading-loose tracking-wider text-xl">
                 I specialize in building performant, user-friendly web applications using React, TypeScript, and Gatsby. My goal is to create modern, scalable solutions that make a positive impact for clients and end users alike.
                 </p>
             </div>
