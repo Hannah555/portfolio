@@ -10,7 +10,7 @@ const Popup = ({children}) => {
     }
 
   return (
-    <div className='absolute z-50 fixed top-0 left-0 h-screen w-screen flex flex-col justify-center items-center gap-3 p-5'>
+    <div className='z-50 fixed top-0 left-0 h-screen w-screen flex flex-col justify-center items-center gap-3 p-5'>
         
         <div className='relative bg-white w-full flex-1 rounded overflow-y-auto'>
           <div className='fixed top-8 w-full flex justify-center items-center'>

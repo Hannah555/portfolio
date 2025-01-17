@@ -6,12 +6,12 @@ const Project2 = ({ data }) => {
   return (
     <div className='text-slate-600 flex flex-col justify-center gap-5 pt-20'>
       <div className='flex flex-col lg:flex-row gap-20 justify-center items-center py-10'>
-        <div className='flex flex-col gap-3'>
+        <div className='flex flex-col gap-3 px-5'>
           <h2>{data.name}</h2>
           <p>{data.tagline}</p>
         </div>
 
-        <img src={imagesMap['blog_home']} alt='screenshot' className='h-[300px] max-w-[500px] w-fit rounded shadow-lg' />
+        <img src={imagesMap['blog_home']} alt='screenshot' className='md:max-w-[500px] w-fit rounded shadow-lg' />
       </div>
       <div className='bg-gray-700 py-20 px-10 flex flex-col justify-center items-center gap-10'>
         <h2 className='text-white text-2xl font-bold'>Features</h2>
@@ -108,14 +108,14 @@ const Project2 = ({ data }) => {
         </div>
       </div>
 
-      <div className='flex flex-col gap-28 justify-center items-center py-20 px-10'>
+      <div className='flex flex-col gap-16 justify-center items-center py-20 px-10'>
         <h2>Tools</h2>
         <div className='flex flex-col gap-10'>
           {
             chunkArrayWithPattern(data.icons, [4, 5, 3, 4]).map((row, rowIndex) => (
-              <div key={rowIndex} className="flex gap-32 justify-center">
+              <div key={rowIndex} className="flex flex-col md:flex-row gap-10 md:gap-32 justify-center items-center">
                 {row.map((icon, index) => (
-                  <img src={imagesMap[icon]} key={index} className="h-10" alt='screenshot'/>
+                  <img src={imagesMap[icon]} key={index} className="h-10 w-fit" alt='screenshot'/>
                 ))}
               </div>
             ))

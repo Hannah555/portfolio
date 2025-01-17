@@ -1,10 +1,17 @@
 import React from 'react'
 import { RectButtonFill, RectButtonOutline } from '../components/rectbutton'
 import { useScroll } from '../contexts/scrollcontext'
+import { useRender } from '../contexts/rendercontext';
 
 const Home = () => {
 
     const {targetRefs} = useScroll();
+
+    const {activeSection, setActiveSection} = useRender();
+
+    const handleClick = () => {
+      setActiveSection('contact');
+    }
 
   return (
     <div ref={targetRefs.top} className="min-h-screen flex justify-center items-center">
@@ -18,8 +25,8 @@ const Home = () => {
             </div>
             
             <div className="flex gap-10">
-              <RectButtonFill label={"Contact Me"} />
-              <RectButtonOutline label={"Download CV"} />
+              <RectButtonFill label={"Contact Me"} onClick={handleClick}/>
+              {/* <RectButtonOutline label={"Download CV"} /> */}
             </div>
           </div>
         </div>
