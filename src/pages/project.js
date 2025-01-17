@@ -1,5 +1,4 @@
 import React from 'react'
-import { useScroll } from '../contexts/scrollcontext'
 import ProjectSlide from '../components/projectSlide';
 import { projects } from '../data/projectData';
 import Corousel from '../components/corousel';

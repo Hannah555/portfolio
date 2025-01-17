@@ -1,16 +1,16 @@
 export const chunkArrayWithPattern = (array, pattern) => {
-
     const chunks = [];
     let currentIndex = 0;
 
-    while(currentIndex < array.length) {
-        pattern.forEach((size) => {
-            if(currentIndex < array.length) {
-                chunks.push(array.slice(currentIndex, currentIndex + size));
+    while (currentIndex < array.length) {
+        for (const size of pattern) {
+            if (currentIndex < array.length) {
+                const chunk = array.slice(currentIndex, currentIndex + size);
+                chunks.push(chunk);
                 currentIndex += size;
             }
-        });
+        }
     }
 
     return chunks;
-}
+};

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Navbar from "../components/navbar";
 import Contact from "./contact";
 import About from "./about";
@@ -14,25 +14,25 @@ import Project2 from "./projectDetail/project2";
 import Project3 from "./projectDetail/project3";
 
 const Main = () => {
-  const [setBtnVisible] = useState(false);
+  // const [setBtnVisible] = useState(false);
   const {activeSection} = useRender();
   const {project} = usePopup();
 
-  const handleScroll = () => {
-    const scrollPosition = window.scrollY;
-    if(scrollPosition > 300) {
-      setBtnVisible(true);
-    } else {
-      setBtnVisible(false);
-    }
-  };
+  // const handleScroll = () => {
+  //   const scrollPosition = window.scrollY;
+  //   if(scrollPosition > 300) {
+  //     setBtnVisible(true);
+  //   } else {
+  //     setBtnVisible(false);
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll)
+  //   };
+  // }, []);
 
   return (
     <div className="relative font-josefin font-normal">
