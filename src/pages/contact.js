@@ -14,13 +14,13 @@ const Contact = () => {
                 <p className=' animate-slide-down font-josefin text-7xl'>Let's Connect</p>
                 <p className=''>If you have any questions, want to collaborate, or just want to say hi, feel free to reach out!</p>
             </div>
-            <div ref={targetRefs.contact}  className='flex flex-col justify-start items-start gap-10 border border-2 border-teal-600 rounded p-10'>
+            <div ref={targetRefs.contact}  className='flex flex-col justify-start items-start gap-10 border-2 border-teal-600 rounded p-10'>
                 <div className='flex gap-8 justify-center items-center'>
                     <div className='flex gap-10'>
                         <img src={whatsappIcon} className='h-6 w-6' alt='whatsapp icon'/>
                     </div>
                     
-                    <a href='https://wa.me/qr/HCJXP6QQHRIGK1' className='hover:underline hover:text-teal-600 hover:cursor-pointer'>(+06) 0199740620 </a>
+                    <a href='https://wa.me/qr/HCJXP6QQHRIGK1' className='hover:underline hover:text-teal-600 hover:cursor-pointer'>(+60) 199740620 </a>
                 </div>
                 <div className='flex gap-8'>
                     <img src={mailIcon} alt='mail icon' className='h-6 w-6'/>
